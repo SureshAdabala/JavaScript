@@ -14,6 +14,12 @@
  *      console.log("This is the second function.");
  * }
  * firstFunction(secondFunction);
+ * 
+ * 
+ * 
+ * note:
+ * -----------------------------------------------------
+ * A callback function in the form of named function, anonymous function, or arrow function can be passed as an argument to another function.
  */
 
 
@@ -29,3 +35,17 @@ function game2() {
 }
 
 game1(game2);
+
+
+function sum1(callback1, callback2) {
+    callback1(20+30,40);
+    callback2(50+50,60);
+}
+function sum2(a,b) {
+    console.log(a+b);
+    return a+b;
+}
+function sum3(b,a) {
+    console.log(a+b);
+}
+sum1(sum2, sum3);
