@@ -6,39 +6,54 @@
     //Example of promise in JavaScript
 function placed(ID) {
     return new Promise((success)=>{
-        console.log("Order Placed");
+        success("Order Placed");
     });
 }
 function shipped(ID) {
     return new Promise((success)=>{
-        console.log("Order Shipped");
+        success("Order Shipped");
     });
 }
 function dispatch(ID) {
     return new Promise((success)=>{
-        console.log("Order Dispatched");
+        success("Order Dispatched");
     });
 }
 function deliver(ID) {
     return new Promise((success)=>{
-        console.log("Order Deleivered");
+        success("Order Delivered");
     });
 }
 
-placed(85634).then((msg)=>{
-    console.log(msg); 
-    return shipped(85634);
-});
-shipped(85634).then((msg)=>{
-    console.log(msg); 
-    return dispatch(85634);
-});
-dispatch(85634).then((msg)=>{
-    console.log(msg); 
-    return deliver(85634);
-});
-deliver(253634).then((msg)=>
-console.log(msg));
+
+ placed(85634).then((msg1)=>{
+    console.log(msg1);
+    shipped(85634).then((msg2)=>{
+        console.log(msg2);
+        dispatch(85634).then((msg3)=>{
+            console.log(msg3);
+                deliver(85634).then((msg4)=>
+                console.log(msg4));
+        });
+    });  
+ });
+
+
+ // placed(85634).then((msg)=>{
+//     console.log(msg); 
+//     return shipped(85634);
+// });
+// shipped(85634).then((msg)=>{
+//     console.log(msg); 
+//     return dispatch(85634);
+// });
+// dispatch(85634).then((msg)=>{
+//     console.log(msg); 
+//     return deliver(85634);
+// });
+// deliver(253634).then((msg)=>
+// console.log(msg));
+
 
     //example of promise chaining in JavaScript
       function add(val) {
