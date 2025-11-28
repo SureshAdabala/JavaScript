@@ -1,0 +1,28 @@
+{
+  "Games": [
+    {
+      "id": "1",
+      "name": "ThrowBall"
+    },
+    {
+      "id": "2",
+      "name": "Kabaddi"
+    },
+    {
+      "id": "3",
+      "name": "Criket"
+    },
+    {
+      "id": "4",
+      "name": "VolleyBall"
+    },
+    {
+      "id": "5",
+      "name": "Kho-Kho"
+    },
+    {
+      "id": "6",
+      "name": "Hand Ball"
+    }
+  ]
+}
