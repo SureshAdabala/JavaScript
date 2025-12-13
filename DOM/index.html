@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document Object Model)</title>
+</head>
+<body>
+    <script>
+        // let div = document.createElement("div");
+        // let p = document.createElement("p");
+        // p.innerText = "Hii!! How are you?";
+        // div.appendChild(p);
+        // document.body.appendChild(div);
+    //-----------------------------------------------------------------
+        // let ul = document.createElement("ul")
+        // let data = ["HTML","CSS","JS","JAVA","SQL"]
+        // for(let d in data) {
+        //     let li = document.createElement("li")
+        //     li.innerText = data[d]
+        //     ul.appendChild(li)
+        // } 
+        // document.body.appendChild(ul);
+
+    //----------------------------OR-----------------------------------
+        // let ul1 = document.createElement("ul");
+        // for(var i = 1;i<=3;i++) {
+        //     let li = document.createElement("li");
+        //     li.innerText = i;
+        //     ul1.appendChild(li);
+        // }
+        // document.body.appendChild(ul1);
+    //-----------------------------------------------------------------
+        // let div1 = document.createElement("div")
+        // let h1 = document.createElement("h1")
+        // let p1 = document.createElement("p")
+        // h1.innerText = "Kabaddi"
+        // p1.innerText = "It is a most popular Game"
+        // div1.appendChild(h1)
+        // div1.appendChild(p1)
+        // document.body.appendChild(div1)
+    //-----------------------------------------------------------------
+        // let table = document.createElement("table")
+        // let tr = document.createElement("tr")
+        // let data = ["Suresh","Kishore","Vinay"]
+        // for(let d in data) {
+        //     let td = document.createElement("td")
+        //     td.innerText = data[d]
+        //     tr.appendChild(td)
+        // }
+        // table.appendChild(tr)
+        // document.body.appendChild(table)
+    //----------------------------------------------------------------
+        // let div = document.createElement("div");
+        // let names = ["Suresh","Kishore","Vinay","Manoj","Duragrao"];
+        // for(let n in names) {
+        //     let button = document.createElement("button")
+        //     button.innerText = names[n]
+        //     div.appendChild(button)
+        // }
+        // document.body.appendChild(div)
+
+
+
+
+        
+    //-----------------Fetching ID's using For-in-------------------
+        // let arr = [{"id":"1"},{"id":"2"},{"id":"3"},{"id":"4"}]
+        // let div = document.createElement("div")
+        // for(let i in arr) {
+        //     let p = document.createElement("p")
+        //     p.innerText = "ID : "+arr[i].id 
+        //     div.appendChild(p)
+        // }
+        // document.body.appendChild(div)
+    //-----------------Fetching ID's using ForEach-------------------
+        // let arr = [{"id":"1"},{"id":"2"},{"id":"3"},{"id":"4"}]
+        // let div = document.createElement("div")
+        // arr.forEach(ele=>{
+        //     let p = document.createElement("p")
+        //     p.innerHTML = `<p>ID : ${ele.id}</p>`
+        //     div.appendChild(p);          
+        // })
+        // document.body.appendChild(div)
+    
+    //-----------------Fetching Names using ForEach-------------------
+        //  let names = ["Suresh","Kishore","Manoj","Vinay","Durgarao"];
+        //  names.forEach(ele=>{
+        //       let div = document.createElement("div")
+        //       div.innerHTML = `<p> <b>Names :</b> <i>${ele}<i/></p>`
+        //       document.body.appendChild(div);
+        //  });
+    //-------------------getElementById Method-----------------------------
+            // let data = ["Suresh","Kishore","Manoj","Vinay","Durgarao"];
+            // let div1 = document.getElementById("ID")
+            // data.forEach(ele=>{
+            //     let p = document.createElement("p")
+            //     p.innerHTML = ele
+            //     div1.appendChild(p)
+            // });
+    //-------------------getElementsByClassName Method---------------------
+            // let data = ["Suresh","Kishore","Manoj","Vinay","Durgarao"];
+            // let div1 = document.getElementsByClassName("Name")[0]
+            // data.forEach(ele=>{
+            //     let p = document.createElement("p")
+            //     p.innerHTML = ele
+            //     div1.appendChild(p)
+            // });
+    </script>
+</body>
+</html>

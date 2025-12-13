@@ -1,13 +1,13 @@
-const arr1 = [1, 2, 3];
-const result = arr1.map((num) => console.log(num));
+// const arr1 = [1, 2, 3];
+// const result = arr1.map((num) => console.log(num));
 
- const arr2 = [1, null, 2, undefined, 3];
-let arr3 = arr2.filter(num => num !== null);
-console.log(arr3);
+//  const arr2 = [1, null, 2, undefined, 3];
+// let arr3 = arr2.filter(num => num !== null);
+// console.log(arr3);
 
-const arr4 = [1, 2, 3];
-    const result1 = arr4.filter((num, index, array) => array.includes(num + 1));
-    console.log(result1);
+// const arr4 = [1, 2, 3];
+//     const result1 = arr4.filter((num, index, array) => array.includes(num + 1));
+//     console.log(result1);
 /******
  * Array iterative methods :-
  * 
@@ -42,10 +42,10 @@ const arr4 = [1, 2, 3];
 //     console.log(element, index, arr);
 // });
 
-// let arr = ["HTML", "CSS", "JS", "ReactJS", "NodeJS"];
-// arr.forEach((element) => {
-//     console.log(element);
-// });
+let arr1 = ["HTML", "CSS", "JS", "ReactJS", "NodeJS"];
+arr.forEach((element) => {
+    console.log(element);
+});
 // let newarr = [];
 // arr.forEach((element) => {
 //     newarr.push(element.toLowerCase());

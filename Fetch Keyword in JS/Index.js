@@ -137,7 +137,7 @@
                     }).then(res1=>{
                         if(res1.ok) {
                             console.log(res1.status,res1.statusText);
-                        }
+                        }   
                         else{
                             console.log("Something Went Wrong");
                         }
