@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            box-sizing: border-box;
+        }
+        .box {
+            background-color:lightpink;
+            border : 2px solid black;
+            padding: 20px;
+            padding-top: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #btn {
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            font-size: 18px;
+            align-content: center;
+        }
+        .remove {
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <button id="btn-1">Click Me-1</button>
+    <button id="btn-2">Click Me-2</button> -->
+
+    <button id = "btn">Get Data</button>
+
+    <div id="container">
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
